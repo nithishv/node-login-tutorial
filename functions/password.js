@@ -40,7 +40,7 @@ exports.resetPasswordInit = email =>
                 .then(users => {
                     if(users.length == 0) {
                         reject({
-                            status: 404, message 'User not found'
+                            status: 404, message: 'User not found'
                         });
                     } else {
                         let user = users[0];
